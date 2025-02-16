@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "coke",
+    "price": 20,
+    "imgUrl": "/image/coke-removebg-preview.png",
+    "inStock": false
+  },
+  {
+    "id": 2,
+    "name": "soda",
+    "price": 15,
+    "imgUrl": "/image/soda-removebg-preview.png",
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "sprite",
+    "price": 18,
+    "imgUrl": "/image/sprite-removebg-preview.png",
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "name": "mineral",
+    "price": 18,
+    "imgUrl": "/image/minere-removebg-preview.png",
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "purelife",
+    "price": 18,
+    "imgUrl": "/image/purelife-removebg-preview.png",
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "name": "purelife2",
+    "price": 25,
+    "imgUrl": "/image/purelife-removebg-preview.png",
+    "inStock": true
+  }
+]

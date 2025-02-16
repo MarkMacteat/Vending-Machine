@@ -1,0 +1,148 @@
+.topNav {
+  color: #fff;
+  font-weight: bold;
+  background-color: red;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  grid-area: topNav;
+}
+
+/* .container {
+  display: grid;
+  grid-template-areas:
+    "topNavContainer topNavContainer"
+    "main sidebar";
+  grid-template-columns: 2fr 1fr;
+  text-align: center;
+} */
+
+.container > * {
+  padding: 10px;
+}
+
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  grid-area: main;
+  min-width: 0%;
+  width: 90%;
+  margin: 0px;
+}
+
+.sidebar {
+  background-color: lightblue;
+  grid-area: sidebar;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  min-width: none;
+}
+
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 320px) {
+  .swiper-container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
+
+.categorybutton {
+  background-color: blue;
+  border: none;
+  color: white;
+  margin-left: 0.3rem;
+  padding: 0.5rem;
+}
+
+.topNavContainer {
+  grid-area: topNavContainer;
+  display: flex;
+  background-color: blue;
+  padding: 1em;
+}
+
+.labelContainer {
+  display: flex;
+}
+
+.catContainer {
+  display: flex;
+}
+
+.catContainer button {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.catContainer button:hover {
+  background-color: darkblue;
+}
+
+.label {
+  margin: 0 1rem 0 0;
+  font-size: 1.7rem;
+  display: none;
+}
+
+.toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 530px) {
+  .topNavContainer {
+    display: inline-block;
+    background-color: blue;
+    width: 100%;
+    margin: 0;
+  }
+  .label {
+    display: block;
+    cursor: pointer;
+  }
+  .catContainer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #eaeaeb;
+    display: none;
+  }
+
+  .catContainer div {
+    display: block;
+    align-self: center;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+  }
+
+  /* .categoryButtonContainer {
+    align-items: center;
+  } */
+
+  .sidebar {
+    display: none;
+  }
+
+  .toggle:checked + .catContainer {
+    display: block;
+  }
+}
